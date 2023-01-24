@@ -9,6 +9,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h3 data-testid="counter">{counter}</h3>
+        <div>
+          <button data-testid="minus-btn">-</button>
+          <button data-testid="plus-btn">+</button>
+        </div>
       </header>
     </div>
   );

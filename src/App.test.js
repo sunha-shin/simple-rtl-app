@@ -5,5 +5,16 @@ test('the counter starts at 0', () => {
   render(<App />);
   const counterElement = screen.getByTestId("counter");
   expect(counterElement).toHaveTextContent(0);
-  // expect(counterElement).toBe(0);
 });
+
+test('minus button has correct text', () => {
+  render(<App/>);
+  const minusButtonElement = screen.getByTestId('minus-btn');
+  expect(minusButtonElement).toHaveTextContent('-')
+})
+
+test('plus button has correct text', () => {
+  render(<App/>);
+  const plusButtonElement = screen.getByTestId('plus-btn');
+  expect(plusButtonElement).toHaveTextContent('+')
+})
